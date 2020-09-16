@@ -1,0 +1,17 @@
+export default {
+    language: 'Change language to {0}',
+    Dashboard: 'Dashboard',
+    Screenshot: 'Screenshot',
+    Automation: 'Automation',
+    ShellConsole: 'Shell Console',
+    CodingConsole: 'Coding Console',
+    DebugConsole: 'Debug Console',
+    VPN: 'VPN',
+    Control: 'Control',
+    CodeAndRun: 'Code and run',
+    ScriptScheduler: 'Script Scheduler',
+    DeviceSetting: 'Device Setting',
+    DebugLog: 'Debug Log',
+    Devices: 'Devices',
+    Settings: 'Settings',
+}

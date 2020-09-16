@@ -2,10 +2,10 @@
 	<vue-scroll class="forgot-password-page align-vertical">
 		<div class="form-wrapper align-vertical-middle">
 			<div class="form-box card-base card-shadow--extraLarge">
-				<img class="image-logo" src="@/assets/images/logo.svg" alt="logo"/>
+                <span class="logo">LOGO</span>
 				
 				<float-label class="styled">
-					<input type="email" placeholder="E-mail">
+					<input type="email" placeholder="E-mail" v-model="form.email">
 				</float-label>
 
 				<div class="flex text-center center pt-20 pb-10">			
@@ -46,6 +46,18 @@ export default {
 	margin-left: -30px;
 	margin-right: -30px;
 
+    .logo{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 20px;
+        color: #000000;
+        margin: 0px auto;
+        margin-bottom: 70px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
 	.form-wrapper {
 		width: 100%;
 	}
@@ -70,9 +82,23 @@ export default {
 			margin-bottom: 50px;
 			display: block;
 		}
+        .vfl-label.vfl-label-on-input{
+            display: none;
+        }
+        .vfl-has-label.styled .vfl-label.vfl-label-on-input + input{
+            border-bottom: 1px solid #BABABA
+        }
 
 		.send-btn {
-			width: 160px;
+            padding: 12px 58px;
+            border: 2px solid #5B5B5B;
+            border-radius: 6px;
+            span{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+            }
 		}
 	}
 }

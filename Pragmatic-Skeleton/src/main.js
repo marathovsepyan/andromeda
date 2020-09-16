@@ -23,6 +23,8 @@ import VueResize from 'vue-resize'
 import 'vue-resize/dist/vue-resize.css'
 //import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import 'flag-icon-css/css/flag-icon.css'
+import MultiLanguage from './es6'
+import language from './lang/language'
 
 
 /* ═ ═ ═ ═ ═ ═ ═ ═ ═ *\
@@ -59,6 +61,7 @@ Vue.use(Element, {locale})
 Vue.use(vClickOutside)
 Vue.use(VueFloatLabel)
 Vue.use(Vuebar)
+Vue.use(MultiLanguage, language);
 Vue.component('vue-scroll', VuePerfectScrollbar)
 Vue.directive('affix', Affix)
 

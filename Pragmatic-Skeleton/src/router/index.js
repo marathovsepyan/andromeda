@@ -53,14 +53,7 @@ const router = new Router({
 				layout: layouts.contenOnly
 			}
 		},
-		{
-			path: '/login2',
-			name: 'login2',
-			component: Login2,
-			meta: {
-				layout: layouts.contenOnly
-			}
-		},
+
 		{
 			path: '/register',
 			name: 'register',

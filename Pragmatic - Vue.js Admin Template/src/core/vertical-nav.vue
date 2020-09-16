@@ -106,7 +106,7 @@ export default {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.vertical-nav {
 		width: 100%;
 		position: fixed;
